@@ -1,0 +1,32 @@
+a = ['a1','a2' 'a3']
+b = ['b1 b2 b3']
+c = ['c1 c2 c3','c4, c5,c6']
+
+for char in a:
+    print(char)
+    #a1
+    #a2a3
+    print(list(char))
+    #['a', '1']
+    #['a', '2', 'a', '3']
+    print(len(list(char)))
+    #2
+    #4
+
+
+for char in b:
+    print(char)
+    #b1 b2 b3
+    print(list(char))
+    #['b', '1', ' ', 'b', '2', ' ', 'b', '3']
+
+for char in c:
+    print(char)
+    #c1 c2 c3
+    #c4 c5 c6
+    print(list(char))
+    #['c', '1', ' ', 'c', '2', ' ', 'c', '3']
+    #['c', '4', ',', ' ', 'c', '5', ',', 'c', '6']
+    print(len(list(char)))
+    #8
+    #9
