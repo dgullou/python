@@ -1,0 +1,11 @@
+with open('device_guid_raw.txt', 'r', encoding="utf-8") as f:
+    content = f.readlines()
+    print(content)
+    #['\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '                 ipmitool -I lanplus -H 192.168.58.138 -U  admin -P adminadmin raw 0x06 0x37\n', ' 0c cd d8 59 97 7e 7c 39 9e 87 f5 8c c0 0c fb cf\n', 'root@lab86srv:~# \n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n', '\n']
+    value = content[10]
+    #去除第一個空白
+    print(value.lstrip())
+    #0c cd d8 59 97 7e 7c 39 9e 87 f5 8c c0 0c fb cf
+    new_value = value.replace(" ","")
+    print(new_value)
+    #0ccdd859977e7c399e87f58cc00cfbcf
