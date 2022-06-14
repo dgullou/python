@@ -1,0 +1,7 @@
+Interface                  IP-Address      OK? Method Status                Protocol
+Ethernet0/0                192.168.59.171  YES manual up                    up      
+Ethernet0/1                unassigned      YES unset  administratively down down    
+Ethernet0/2                unassigned      YES unset  administratively down down    
+Ethernet0/3                unassigned      YES unset  administratively down down    
+Loopback0                  unassigned      YES unset  up                    up      
+Loopback1                  1.1.1.1         YES manual up                    up      
