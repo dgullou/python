@@ -1,0 +1,26 @@
+def generate_multicast_mac_addresses(starting_mac, count):
+    mac_addresses = []
+
+    # 将起始MAC地址转换为整数
+    current_mac = int(starting_mac.replace(":", ""), 16)
+
+    for _ in range(count):
+        # 将当前MAC地址格式化为12个字符的十六进制字符串
+        mac_str = format(current_mac, '012x')
+
+        # 将多播地址格式化为01:00:5E:XX:XX:XX的形式
+        mac_address = "01:00:5E:" + ":".join([mac_str[i:i+2] for i in range(0, 6, 2)])
+        mac_addresses.append(mac_address)
+
+        # 递增MAC地址
+        current_mac += 1
+
+    return mac_addresses
+
+starting_multicast_mac = '01005e000001'
+count = 512
+
+multicast_mac_addresses = generate_multicast_mac_addresses(starting_multicast_mac, count)
+
+for mac in multicast_mac_addresses:
+    print(mac)
