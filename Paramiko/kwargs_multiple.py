@@ -1,3 +1,4 @@
+#use **kwargs
 import define_paramiko
 
 router1 = {'server_ip': '192.168.59.78', 'server_port':'22', 'user':'cisco', 'passwd': 'cisco'}
