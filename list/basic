@@ -1,32 +1,51 @@
-a = ['a1','a2' 'a3']
+fr = ["jason", "tony", "jerry"]
+print(len(fr))
+print(f"{fr[0]}, {fr[1]}, {fr[2]}, are my friends.")
+
+luck = [1,2,3,4,5,10]
+print(luck[-1]) #10
+print(luck[0:3]) #[1, 2, 3]
+
+xx = [1,2,1]
+print(xx.count(1)) #2
+print(xx*3) #[1, 2, 1, 1, 2, 1, 1, 2, 1]
+xx[1] = 10
+print(xx) #[1, 10, 1]
+
+x2 = [1,2,3]
+y2 = [4,5,6]
+print(x2+y2) #[1, 2, 3, 4, 5, 6]
+
+
+a = ['a1', 'a2' 'a3']
 b = ['b1 b2 b3']
-c = ['c1 c2 c3','c4, c5,c6']
+c = ['c1 c2 c3', 'c4, c5,c6']
 
 for char in a:
     print(char)
-    #a1
-    #a2a3
+    # a1
+    # a2a3
     print(list(char))
-    #['a', '1']
-    #['a', '2', 'a', '3']
+    # ['a', '1']
+    # ['a', '2', 'a', '3']
     print(len(list(char)))
-    #2
-    #4
+    # 2
+    # 4
 
 
 for char in b:
     print(char)
-    #b1 b2 b3
+    # b1 b2 b3
     print(list(char))
-    #['b', '1', ' ', 'b', '2', ' ', 'b', '3']
+    # ['b', '1', ' ', 'b', '2', ' ', 'b', '3']
 
 for char in c:
     print(char)
-    #c1 c2 c3
-    #c4 c5 c6
+    # c1 c2 c3
+    # c4 c5 c6
     print(list(char))
-    #['c', '1', ' ', 'c', '2', ' ', 'c', '3']
-    #['c', '4', ',', ' ', 'c', '5', ',', 'c', '6']
+    # ['c', '1', ' ', 'c', '2', ' ', 'c', '3']
+    # ['c', '4', ',', ' ', 'c', '5', ',', 'c', '6']
     print(len(list(char)))
-    #8
-    #9
+    # 8
+    # 9
