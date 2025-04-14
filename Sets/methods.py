@@ -22,3 +22,4 @@ print(a.issuperset(b))
 # isdisjoint	沒有交集	{1,2}.isdisjoint({3}) → True
 # issubset	是對方的子集合	{1,2}.issubset({1,2,3}) → True
 # issuperset	是對方的超集合	{1,2,3}.issuperset({1}) → True
+

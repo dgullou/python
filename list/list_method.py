@@ -50,3 +50,6 @@ aa = [1, 2, [4,5,6], 2, 1, [4, 3, [-10,4]]]
 print(aa[2][1]) #5
 print(aa[5][2][0]) #-10
 
+mylist = ['a', 'b', 'c', 'd']
+mystring = ' and ' .join(mylist)
+print(mystring) #a and b and c and d
